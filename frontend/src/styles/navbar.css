@@ -1,0 +1,116 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: #111827;
+  padding: 16px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ff8c66;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.logo-title {
+  color: white;
+  margin: 0;
+}
+
+.logo-subtitle {
+  color: #9ca3af;
+  margin: 0;
+  font-size: 12px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link.active {
+  color: #ff8c66;
+}
+
+.role-badge {
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.role-badge.admin {
+  background: #10b981;
+}
+
+.theme-btn {
+  background: transparent;
+  border: 1px solid #374151;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: #ff8c66;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .logo-subtitle {
+    display: none;
+  }
+
+  .role-badge {
+    display: none;  
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .theme-btn,
+  .logout-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
